@@ -14,9 +14,9 @@ import javax.persistence.Id;
 public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Getter
     private Long id;
     private String nome;
     private Double preco;
     private String descricao;
-
 }
